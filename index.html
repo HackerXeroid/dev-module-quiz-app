@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <section class="play_section center">
+          <button class="play-btn btn btn-outline dropdown">Play</button>
+        </section>
+
+        <section class="quiz_section hidden">
+          <menu class="top_bar">
+            <div class="top_bar__left">
+              <div class="question_indicator">
+                Question <span class="question_no">{QUESTION_NO}</span>/<span
+                  class="total_questions"
+                  >{TOTAL_QUESTIONS}</span
+                >
+              </div>
+              <div class="progress_container">
+                <div class="progress_bar"></div>
+              </div>
+            </div>
+
+            <div class="top_bar__right score_container">
+              <p class="score_label">Score</p>
+              <bold class="score_value">{SCORE}</bold>
+            </div>
+          </menu>
+
+          <h2 class="quiz_section__question heading">{QUESTION}</h2>
+
+          <div class="options_container">
+            <div class="option_container dropdown" data-no="1">
+              <p class="option_name center">A</p>
+              <p class="option option_one">{CHOICE_ONE}</p>
+            </div>
+            <div class="option_container dropdown" data-no="2">
+              <p class="option_name center">B</p>
+              <p class="option option_two">{CHOICE_TWO}</p>
+            </div>
+            <div class="option_container dropdown" data-no="3">
+              <p class="option_name center">C</p>
+              <p class="option option_three">{CHOICE_THREE}</p>
+            </div>
+            <div class="option_container dropdown" data-no="4">
+              <p class="option_name center">D</p>
+              <p class="option option_four">{CHOICE_FOUR}</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="final_section hidden">
+          <h2 class="final_score heading">0</h2>
+          <div class="final_section__btn_container">
+            <button class="play_again-btn btn btn-outline dropdown">
+              Play Again
+            </button>
+            <button class="go_home-btn btn btn-outline dropdown">
+              Go Home
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
