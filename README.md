@@ -1,6 +1,6 @@
-# Quiz App Fast
+# Basic Quiz Application
 
-This is a quiz application developed using [insert technology/framework here]. It allows users to take quizzes on various topics and provides instant feedback on their answers.
+This is a quiz application developed using vanilla JavaScript. It allows users to take quizzes on various topics and provides instant feedback on their answers.
 
 ## Features
 
